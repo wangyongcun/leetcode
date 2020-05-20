@@ -171,7 +171,15 @@
 			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}"
 			>
 			<File
+				RelativePath=".\lcof11_xuan-zhuan-shu-zu-de-zui-xiao-shu-zi-lcof.h"
+				>
+			</File>
+			<File
 				RelativePath=".\lcof39_majorityElement.h"
+				>
+			</File>
+			<File
+				RelativePath=".\lcof58_zuo-xuan-zhuan-zi-fu-chuan-lcof.h"
 				>
 			</File>
 			<File
