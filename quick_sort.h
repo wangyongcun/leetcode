@@ -1,7 +1,5 @@
 #include "stdafx.h"
 
-
-
 int partion(int* nums,int b,int e)
 {
 	int m = nums[b];
