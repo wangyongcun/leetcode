@@ -1,20 +1,6 @@
-// leetcode.cpp : 定义控制台应用程序的入口点。
-//
-
 #include "stdafx.h"
 
-void qs(int* nums, int b, int e)
-{
-	if (b >= e)
-	{
-		return;
-	}
 
-	int p = partion(nums, b, e);
-
-	qs(nums, b, p);
-	qs(nums, p + 1, e);
-}
 
 int partion(int* nums,int b,int e)
 {
@@ -43,9 +29,24 @@ int partion(int* nums,int b,int e)
 
 	return b;
 }
-int _tmain(int argc, _TCHAR* argv[])
+
+void qs(int* nums, int b, int e)
+{
+	if (b >= e)
+	{
+		return;
+	}
+
+	int p = partion(nums, b, e);
+
+	qs(nums, b, p);
+	qs(nums, p + 1, e);
+}
+
+int test_qs(int argc, _TCHAR* argv[])
 {
 	int nums[100] = { 9,8,2,6,4,5,3,1,0,7 };
+	
 	qs(nums, 0, 9);
 
 	for (int i = 0; i <= 9; ++i)
@@ -54,4 +55,3 @@ int _tmain(int argc, _TCHAR* argv[])
 	}
 	return 0;
 }
-
