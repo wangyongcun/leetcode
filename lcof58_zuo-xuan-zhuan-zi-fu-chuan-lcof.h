@@ -1,17 +1,6 @@
 ///https://leetcode-cn.com/problems/zuo-xuan-zhuan-zi-fu-chuan-lcof/
 
-void reverse(string& s,int b,int e)
-{
-	while(b<e)
-	{
-		char t = s[b];
-		s[b] = s[e];
-		s[e] = t;
-
-		++b;
-		--e;
-	}
-}
+#include "common.h"
 
 string reverseLeftWords(string s, int n) {
 

@@ -171,11 +171,19 @@
 			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}"
 			>
 			<File
+				RelativePath=".\common.cpp"
+				>
+			</File>
+			<File
 				RelativePath=".\lcof11_xuan-zhuan-shu-zu-de-zui-xiao-shu-zi-lcof.h"
 				>
 			</File>
 			<File
 				RelativePath=".\lcof39_majorityElement.h"
+				>
+			</File>
+			<File
+				RelativePath=".\lcof58-2_fan-zhuan-dan-ci-shun-xu-lcof.h"
 				>
 			</File>
 			<File
@@ -200,6 +208,10 @@
 			Filter="h;hpp;hxx;hm;inl;inc;xsd"
 			UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}"
 			>
+			<File
+				RelativePath=".\common.h"
+				>
+			</File>
 			<File
 				RelativePath=".\stdafx.h"
 				>
