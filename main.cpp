@@ -7,8 +7,13 @@
 #include "lcof58_zuo-xuan-zhuan-zi-fu-chuan-lcof.h"
 #include "lcof58-2_fan-zhuan-dan-ci-shun-xu-lcof.h"
 #include "lcof60.h"
+#include "lcof29.h"
+#include "lcof30.h"
 void main()
 {
+	test_lcof30();
+	test_lcof29();
+
 	test_lcof60();
 	test_lcof58_2();
 	return;
