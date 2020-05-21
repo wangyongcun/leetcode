@@ -6,8 +6,10 @@
 #include "lcof11_xuan-zhuan-shu-zu-de-zui-xiao-shu-zi-lcof.h"
 #include "lcof58_zuo-xuan-zhuan-zi-fu-chuan-lcof.h"
 #include "lcof58-2_fan-zhuan-dan-ci-shun-xu-lcof.h"
+#include "lcof60.h"
 void main()
 {
+	test_lcof60();
 	test_lcof58_2();
 	return;
 	test_lcof58();

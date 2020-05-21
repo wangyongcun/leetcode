@@ -191,6 +191,10 @@
 				>
 			</File>
 			<File
+				RelativePath=".\lcof60.h"
+				>
+			</File>
+			<File
 				RelativePath=".\main.cpp"
 				>
 			</File>
