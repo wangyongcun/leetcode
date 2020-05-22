@@ -9,8 +9,10 @@
 #include "lcof60.h"
 #include "lcof29.h"
 #include "lcof30.h"
+#include "lcof31.h"
 void main()
 {
+	test_lcof31();
 	test_lcof30();
 	test_lcof29();
 
