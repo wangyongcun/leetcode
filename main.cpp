@@ -11,9 +11,11 @@
 #include "lcof30.h"
 #include "lcof31.h"
 #include "lcof33.h"
+#include "lcof38.h"
 
 void main()
 {
+	test_lcof38();
 	test_lcof33();
 	test_lcof31();
 	test_lcof30();
