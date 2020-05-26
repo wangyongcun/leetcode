@@ -5,12 +5,19 @@ using namespace std;
 
 void permutation(string& s, int b, vector<string>& re) {
 
-	for (int i = b + 1; i < s.size(); ++i)
+	if (b == s.size()-1)
+		re.push_back(s);///only record at this position is right
+
+	//printf("%s\n", s.c_str());
+	for (int i = b ; i < s.size(); ++i)
 	{
-		swap(s[b], s[i]);
-		permutation(s, b + 1, re);
-		re.push_back(s);
-		swap(s[b], s[i]);
+		if (s[b] != s[i] && b != i) {
+			swap(s[b], s[i]);
+			///re.push_back(s);///add record at this position will get some duplicate result
+			//printf("%s\n",s.c_str());
+			permutation(s, b + 1, re);
+			swap(s[b], s[i]);
+		}
 	}
 }
 
@@ -28,5 +35,5 @@ vector<string> permutation(string s) {
 
 
 void test_lcof38() {
-	vector<string>& re = permutation("abc123");
+	vector<string>& re = permutation("abc");
 }
