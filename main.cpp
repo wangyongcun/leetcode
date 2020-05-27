@@ -13,7 +13,7 @@
 #include "lcof33.h"
 #include "lcof38.h"
 #include "lcof45.h"
-
+#include "leet43.h"
 
 #include <iostream>
 #include <stdlib.h>
@@ -27,11 +27,7 @@ int cmp(const void* a, const void* b) //qsort库要求参数const
 void main()
 {
 
-	char s[3][4] = { "cac","abc","bac" };  //字符串数组排序
-	qsort(s, 3, sizeof(s[0]), cmp); //用s[i]来表示某个字符串，一共三组，每组大小是sizeof()
-	for (int i = 0; i < 3; i++)
-		printf("%s\n", s[i]);
-
+	test_leet43();
 	test_lcof45();
 	test_lcof38();
 	test_lcof33();
