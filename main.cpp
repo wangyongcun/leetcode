@@ -14,18 +14,15 @@
 #include "lcof38.h"
 #include "lcof45.h"
 #include "leet43.h"
+#include "lcof49.h"
 
 #include <iostream>
 #include <stdlib.h>
 using namespace std;
-int cmp(const void* a, const void* b) //qsort库要求参数const
-{
-	return strcmp((char*)a, (char*)b); //字典序从小到大
-	//return strcmp((char *)b,(char *)a) ; //字典序从大到小
-}
 
 void main()
 {
+	test_lcof49();
 
 	test_leet43();
 	test_lcof45();
