@@ -15,13 +15,17 @@
 #include "lcof45.h"
 #include "leet43.h"
 #include "lcof49.h"
-
 #include <iostream>
 #include <stdlib.h>
+#include "lcof16.h"
+#include "lcof42.h"
+
 using namespace std;
 
 void main()
 {
+	test_lcof42();
+	test_lcof16();
 	test_lcof49();
 
 	test_leet43();
