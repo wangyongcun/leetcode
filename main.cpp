@@ -19,11 +19,12 @@
 #include <stdlib.h>
 #include "lcof16.h"
 #include "lcof42.h"
-
+#include "lcof62.h"
 using namespace std;
 
 void main()
 {
+	test_lcof62();
 	test_lcof42();
 	test_lcof16();
 	test_lcof49();

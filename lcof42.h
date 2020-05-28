@@ -16,7 +16,7 @@ int maxSubArray(vector<int>& nums) {
 
 	return max;
 }
-void test_lcof31()
+void test_lcof42()
 {
 	vector<int> in = { -2,1,-3,4,-1,2,1,-5,4 };
 	int re = maxSubArray(in);
