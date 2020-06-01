@@ -24,6 +24,8 @@ using namespace std;
 
 void main()
 {
+	test_lcof60();
+
 	test_lcof62();
 	test_lcof42();
 	test_lcof16();
@@ -37,7 +39,7 @@ void main()
 	test_lcof30();
 	test_lcof29();
 
-	test_lcof60();
+	
 	test_lcof58_2();
 	return;
 	test_lcof58();

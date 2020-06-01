@@ -183,11 +183,19 @@
 				>
 			</File>
 			<File
+				RelativePath=".\lcof55.h"
+				>
+			</File>
+			<File
 				RelativePath=".\lcof58-2_fan-zhuan-dan-ci-shun-xu-lcof.h"
 				>
 			</File>
 			<File
 				RelativePath=".\lcof58_zuo-xuan-zhuan-zi-fu-chuan-lcof.h"
+				>
+			</File>
+			<File
+				RelativePath=".\lcof60-2.h"
 				>
 			</File>
 			<File

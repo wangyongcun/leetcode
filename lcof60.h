@@ -7,30 +7,8 @@ vector<double> twoSum(int n) {
 	memset(p,0, sizeof(int) * (6 * n + 1));
 	int nTotal = pow(double(6), n);
 
+	pro(0,1,n,p);
 	printf("%d", nTotal);
-
-	for (int i = 1; i <= 6; ++i)
-	{
-		p[i] = 1;
-	}
-
-	for (int i = 2; i <= n; ++i)
-	{
-		p[i - 1] = 1;
-
-		for (int j = 6 * i; j > i; --j)
-		{
-			int t = 0;
-			for (int k = 1; k <= 6; ++k)
-			{
-				if (j - k >= (i-1))
-					t += p[j - k];
-			}
-			p[j] = t;
-		}
-	}
-
-	p[n] = 1;
 
 	for (int i = n; i <= n * 6; ++i)
 	{
@@ -38,6 +16,22 @@ vector<double> twoSum(int n) {
 	}
 
 	return t;
+}
+
+void pro(int curSum,int curDice,int maxDice,int* p)
+{
+	for(int i=1;i<=6;++i){
+		curSum += i;
+
+		if (curDice == maxDice)
+		{
+			p[curSum] ++;
+		}
+		else{
+			pro(curSum,curDice+1,maxDice,p);
+		}
+	}
+
 }
 
 void test_lcof60()
