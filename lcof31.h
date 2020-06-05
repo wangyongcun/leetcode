@@ -25,7 +25,8 @@ bool validateStackSequences(vector<int>& pushed, vector<int>& popped) {
 				s.push(pushed[index++]);
 		}
 
-		if (s.size()> 0) {
+		/*if (s.size()> 0) */  ///no need
+		{
 			if (popped[i] == s.top()) {
 				s.pop();
 			}
