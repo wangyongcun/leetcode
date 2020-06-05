@@ -8,11 +8,13 @@ void pro(int curSum, int curDice, int maxDice, int* p)
 
 		if (curDice == maxDice)
 		{
-			p[curSum] ++;
+			p[curSum] ++;			
 		}
 		else {
 			pro(curSum, curDice + 1, maxDice, p);
 		}
+
+		curSum -= i;
 	}
 
 }
@@ -38,5 +40,5 @@ vector<double> twoSum(int n) {
 
 void test_lcof60()
 {
-	twoSum(5);
+	twoSum(2);
 }

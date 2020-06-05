@@ -23,10 +23,12 @@
 
 #include "merg_sort_2.h"
 #include "quick_sort_2.h"
+#include "lcof07.h"
 using namespace std;
 
 void main()
 {
+	test_lcof07();
 	test_qs_2();
 	test_ms_2();
 	test_lcof60();
