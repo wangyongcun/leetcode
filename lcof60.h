@@ -1,5 +1,22 @@
 /// https://leetcode-cn.com/problems/nge-tou-zi-de-dian-shu-lcof/
 #include <math.h>
+
+void pro(int curSum, int curDice, int maxDice, int* p)
+{
+	for (int i = 1; i <= 6; ++i) {
+		curSum += i;
+
+		if (curDice == maxDice)
+		{
+			p[curSum] ++;
+		}
+		else {
+			pro(curSum, curDice + 1, maxDice, p);
+		}
+	}
+
+}
+
 vector<double> twoSum(int n) {
 	vector<double> t;
 
@@ -18,21 +35,6 @@ vector<double> twoSum(int n) {
 	return t;
 }
 
-void pro(int curSum,int curDice,int maxDice,int* p)
-{
-	for(int i=1;i<=6;++i){
-		curSum += i;
-
-		if (curDice == maxDice)
-		{
-			p[curSum] ++;
-		}
-		else{
-			pro(curSum,curDice+1,maxDice,p);
-		}
-	}
-
-}
 
 void test_lcof60()
 {

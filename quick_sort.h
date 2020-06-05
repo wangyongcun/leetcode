@@ -41,7 +41,7 @@ void qs(int* nums, int b, int e)
 	qs(nums, p + 1, e);
 }
 
-int test_qs(int argc, _TCHAR* argv[])
+int test_qs_2()
 {
 	int nums[100] = { 9,8,2,6,4,5,3,1,0,7 };
 	
