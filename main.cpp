@@ -24,10 +24,18 @@
 #include "merg_sort_2.h"
 #include "quick_sort_2.h"
 #include "lcof07.h"
+#include "lcof17.h"
+#include "leet120.h"
+#include "leet42.h"
+#include "lcof12.h"
 using namespace std;
 
 void main()
 {
+	test_lcof12();
+	test_leet42();
+	test_leet120();
+	test_lcof17();
 	test_lcof07();
 	test_qs_2();
 	test_ms_2();
