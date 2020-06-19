@@ -28,10 +28,20 @@
 #include "leet120.h"
 #include "leet42.h"
 #include "lcof12.h"
+#include "leet1143.h"
+#include "leet300.h"
+#include "leet261_ms.h"
+#include "leet207_ms.h"
+#include "leet208_ms.h"
 using namespace std;
 
 void main()
 {
+	test_leet208();
+	test_leet207();
+	test_leet261();
+	test_leet300();
+	test_leet1143();
 	test_lcof12();
 	test_leet42();
 	test_leet120();
