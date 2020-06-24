@@ -33,10 +33,20 @@
 #include "leet261_ms.h"
 #include "leet207_ms.h"
 #include "leet208_ms.h"
+#include "leet152.h"
+#include "leet11.h"
+#include "leet673.h"
+#include "leet22.h"
+#include "leet15.h"
 using namespace std;
 
 void main()
 {
+	test_leet15();
+	test_leet22();
+	test_leet673();
+	test_leet11();
+	test_leet152();
 	test_leet208();
 	test_leet207();
 	test_leet261();

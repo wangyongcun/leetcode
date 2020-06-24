@@ -39,9 +39,42 @@ int trap(vector<int>& height) {
 	return re;
 }
 
+int trap2(vector<int>& height) {
+	int i = 0;
+	int j = height.size() - 1;
+	int leftMax = height[i];
+	int rightMax = height[j];
+	int re = 0;
+	while (i<j){
+		if (leftMax < rightMax){
+			if (height[i]< leftMax){
+				re += (leftMax - height[i]);
+			}
+			else {
+				leftMax = height[i];
+			}
+
+			++i;
+		}
+		else {
+			if (height[j] < rightMax) {
+				re += (rightMax - height[j]);
+			}
+			else {
+				rightMax = height[j];
+			}
+			--j;
+		}
+	}
+
+	return re;
+}
+
 void test_leet42() {
 
 	vector<int> input = { 0,1,0,2,1,0,1,3,2,1,2,1 };
 
 	printf("%d", trap(input));
+
+	printf("%d", trap2(input));
 }
